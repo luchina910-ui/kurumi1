@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карта Северодвинска</title>
+  <style>
+    #map { height: 100vh; width: 100vw; }
+    .controls {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+      font-family: Arial, sans-serif;
+    }
+    .controls h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Подключаем API Яндекс Карт с вашим ключом -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=3fe253bb-9f91-401a-a4ec-1c3ac7917373&lang=ru_RU"
+          type="text/javascript"></script>
+  <script src="script.js"></script>
+</body>
+</html>
